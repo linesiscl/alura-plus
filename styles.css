@@ -1,0 +1,168 @@
+:root{
+    /* variaveis */
+    /* ajudam na manutenção do código */
+    --titulo-principal: #fff;
+    --frases-secundarias: #c0c0c0;
+    --botao: #167bf7;
+    --bg-cor: #00030c;
+    --botao-efeito: #6fabf5;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+*{
+    /* seletor global */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* var funciona como uma função */
+    background-color: var(--bg-cor);
+    color: var(--titulo-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url(./imgs/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    /* top/bottom e right/left */
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao{
+    background-color: var(--botao);
+    /* arredondar bordas */
+    border-radius: 5px; 
+    /* em é o tamanho da fonte */
+    padding: 1em;
+    color: var(--titulo-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--titulo-principal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--frases-secundarias);
+}
+
+.container__imagem{
+    /* top, right, bottom, left */
+    margin: 1em 0 2em 0;
+}
+
+.secundario__imagem{
+    width: 70%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--titulo-principal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto{
+    color: var(--frases-secundarias);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.dispositivos__lista{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 32px;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.rodape__lista a {
+    text-decoration: none;
+    color: var(--titulo-principal);
+}
+
+.lista__link{
+    padding: 0 20px;
+}
+
+.lista__link a:hover{
+    color: var(--botao);
+}
+
+.lista__link a:active{
+    color: crimson;
+}
+
+.rodape__texto{
+    color: var(--frases-secundarias);
+    margin: 2em 8em;
+    font-size: 14px;
+}
+
+.rodape__logo{
+    margin: 3em 0;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-efeito);
+    color: var(--bg-cor);
+}
