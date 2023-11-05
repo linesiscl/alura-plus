@@ -166,3 +166,36 @@ footer{
     background-color: var(--botao-efeito);
     color: var(--bg-cor);
 }
+
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+        background-image: none;
+        height: 80vh;
+    }
+
+    .container__imagem{
+        width: 50vw;
+    }
+
+    .container__caixa{
+        margin: 2em;
+    }
+
+    .secundario{
+        margin: 1em;
+        text-align: center;
+    }
+
+    .dispositivos__lista{
+        display: block;
+    }
+
+    .rodape__lista{
+        display: block;
+    }
+
+    .rodape__texto{
+        margin: 2em;
+    }
+}
